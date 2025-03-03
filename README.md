@@ -63,7 +63,7 @@ Karena kita sudah melihat contoh cara penggunaannya, sekarang kita bisa harusnya
 
 Tenang aku akan memberi catatan sedikit.
 
-- Bagaimana cara kita mengetahui suatu objek itu mengembalikan apa?
+### Bagaimana cara kita mengetahui suatu objek itu mengembalikan apa?
 kita akan beri contoh dari suatu function di `class User`
 ```
 function tambah_akun($password){
@@ -83,13 +83,13 @@ function tambah_akun($password){
         return false;
     }
 ```
-Perhatikan pada sintaks terakhir, disitu ada dua `return` bukan? nah return itu berarti mengembalikan suatu nilai.
+Perhatikan pada sintaks terakhir, disitu ada dua `return` bukan? nah return itu berarti mengembalikan suatu nilai dan kemudian menghentikan seluruh operasi pada funtion.
 
 Pada kondisi objek ini, jika tambah akun berhasil dijalankan tanpa kendala, maka objek ini akan mengembalikan `true`, sebaliknya jika tidak maka akan mengembalikan `false`.
 
 btw niatnya aku ingin membuat dokumentasi lengkap soal ini, tapi sepertinya itu tidak perlu.
 
-- Sekarang bagaimana cara mengetahui function itu membutuhkan parameter atau tidak?
+### Sekarang bagaimana cara mengetahui function itu membutuhkan parameter atau tidak?
 Dalam library ku, ada function yang membutuhkan parameter, dan ada juga yang tidak membutuhkan parameter satupun.
 
 bagaimana contoh yang menggunakan parameter? Contohnya seperti poin diatas, tapi ada juga yang lain seperti ini
@@ -105,7 +105,7 @@ function ubah_level($level) {
 ```
 Kita lihat pada baris pertama, yaitu `ubah_level($email)`. dalam function tersebut memiliki sebuah variable yang ada didalam kurung bernama `$email` bukan?, nah variable ini akan otomatis terisi disaat kita akan memanggil objek ini.
 
-Misalnya kita akan memanggilnya seperti ini.
+- Misalnya kita akan memanggilnya seperti ini.
 ```
 $level_kita = 'user';
 
@@ -113,7 +113,7 @@ $user->ubah_level($level_kita);
 ```
 Ini diperbolehkan.
 
-tapi jika kita hanya menulis seperti ini
+- tapi jika kita hanya menulis seperti ini
 ```
 //$level_kita = 'user';
 
