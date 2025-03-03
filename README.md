@@ -1,10 +1,10 @@
 # Simple Library untuk Tugas akhir sebelum UTS
 Mwehoww, Kureichi here!
-I've been created something new in this repo, its called, uhh simple library i think. in this readme, i'll show you how2use my library.
+I've been created something new in this repo, its called, uhh simple library i think. in this readme, i'll show you how2use this shit library.
 
 Bjir jijik cuk.
 
-> [!PERINGATAN SEDIKIT]
+> [!IMPORTANT]
 > Karena library ini hanya digunakan untuk mengerjakan tugas akhir, library ini tidak bisa tahan dengan serangan seperti sqlinjection dan semacamnya, harap modifikasi library ini jika digunakan untuk kebutuhan profesionalitas.
 >
 
