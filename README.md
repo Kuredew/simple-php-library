@@ -89,7 +89,7 @@ Pada kondisi objek ini, jika tambah akun berhasil dijalankan tanpa kendala, maka
 
 btw niatnya aku ingin membuat dokumentasi lengkap soal ini, tapi sepertinya itu tidak perlu.
 
-### Sekarang bagaimana cara mengetahui function itu membutuhkan parameter atau tidak?
+### Bagaimana cara mengetahui function itu membutuhkan parameter atau tidak?
 Dalam library ku, ada function yang membutuhkan parameter, dan ada juga yang tidak membutuhkan parameter satupun.
 
 bagaimana contoh yang menggunakan parameter? Contohnya seperti poin diatas, tapi ada juga yang lain seperti ini
@@ -103,23 +103,24 @@ function ubah_level($level) {
         return false;
     }
 ```
-Kita lihat pada baris pertama, yaitu `ubah_level($email)`. dalam function tersebut memiliki sebuah variable yang ada didalam kurung bernama `$email` bukan?, nah variable ini akan otomatis terisi disaat kita akan memanggil objek ini.
+Kita lihat pada baris pertama, yaitu `ubah_level($level)`. dalam function tersebut memiliki sebuah variable yang ada didalam kurung `()` bernama `$level` bukan?, nah variable ini akan otomatis terisi disaat kita akan memanggil objek ini.
 
-- Misalnya kita akan memanggilnya seperti ini.
+- Untuk memanggilnya kita harus melakukannya seperti ini.
 ```
-$level_kita = 'user';
+$level_yg_kita_pengen = 'user';
 
-$user->ubah_level($level_kita);
+$user->ubah_level($level_yg_kita_pengen);
 ```
-Ini diperbolehkan.
+Yang berarti, isi variable `$level_yg_kita_pengen` akan masuk kedalam variable `$level` yang ada didalam function `ubah_level($level)`.
+*Ini diperbolehkan.*
 
 - tapi jika kita hanya menulis seperti ini
 ```
-//$level_kita = 'user';
+//$level_yg_kita_pengen = 'user';
 
 $user->ubah_level();
 ```
-Maka akan terjadi error.
+*Maka akan terjadi error.*
 
 
 ## Thatshit, hope you enjoy my lib.
