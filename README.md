@@ -59,9 +59,9 @@ if ($check_user){
 
 ## Sekarang apa?
 
-Karena kita sudah melihat contoh cara penggunaannya, sekarang kita bisa harusnya sudah bisa membaca sendiri librarynya
+Karena kita sudah melihat contoh cara penggunaannya, seharusnya sekarang kita sudah bisa membaca sendiri librarynya.
 
-Tenang aku akan memberi catatan sedikit.
+Tetapi aku akan memberi catatan sedikit.
 
 ### Bagaimana cara kita mengetahui suatu objek itu mengembalikan apa?
 kita akan beri contoh dari suatu function di `class User`
@@ -112,7 +112,7 @@ $level_yg_kita_pengen = 'user';
 $user->ubah_level($level_yg_kita_pengen);
 ```
 Yang berarti, isi variable `$level_yg_kita_pengen` akan masuk kedalam variable `$level` yang ada didalam function `ubah_level($level)`.
-*Ini diperbolehkan.*
+Ini diperbolehkan dan tidak akan terjadi error.
 
 - tapi jika kita hanya menulis seperti ini
 ```
@@ -120,7 +120,7 @@ Yang berarti, isi variable `$level_yg_kita_pengen` akan masuk kedalam variable `
 
 $user->ubah_level();
 ```
-*Maka akan terjadi error.*
+Maka akan terjadi error.
 
 
 ## Thatshit, hope you enjoy my lib.
