@@ -16,7 +16,6 @@ Ayo lanjut, Mari kita lihat contoh login.
 <?php
 session_start();
 
-//require "../connection/connection.php";
 include $_SERVER['DOCUMENT_ROOT']."/dashboard/library/library.php";
 
 $email = $_POST['email'];
@@ -48,8 +47,6 @@ if ($check_user){
 } else {
     $_SESSION['info'] = 'Username atau password salah, silahkan coba lagi.';
     header('Location: /dashboard/login/');
-    //echo '<script language = "javascript">
-    //alert("Username atau Password salah, silahkan coba lagi."); document.location="index.php";</script>';
 }
 
 ?>
